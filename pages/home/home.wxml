@@ -1,0 +1,37 @@
+<import src="/components/common/common.wxml" />
+
+
+<view class="container">
+  <view class="page-body">
+    <!-- 顶部搜索 -->
+    <view class="page-section page-section-spacing topSearch">
+      <view class="showCity">
+        <navigator class="getCity">{{getCity}}</navigator>
+        <image src="/images/triangle.png" />
+      </view>
+       <view class="toggleMain">
+        <text class="activeText">{{nowplaying}}</text>
+        <text>{{upcoming}}</text>
+      </view>
+      <navigator class="search-btn">
+        <image src="/images/search-red.png"></image>
+      </navigator>
+      <view></view>
+      <view></view>
+    </view>
+    <!-- swiper -->
+    <view class="page-section page-section-spacing swiper">
+      <template is="swiper" data="{{...focus}}" />
+    </view>
+    <!--gride -->
+    <view class="page-section page-section-spacing grideBox">
+      <template is="gridelist" data="{{...gridelistData}}" />
+    </view>
+
+     <!-- now hot movies -->
+
+    <view class="page-section page-section-spacing">
+      <template is="movieLists" data="{{...movieListsData}}" />
+    </view>
+  </view>
+</view>

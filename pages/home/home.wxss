@@ -1,0 +1,77 @@
+/* pages/home/home.wxss */
+
+@import '../../components/common/common.wxss';
+.container{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.page-body{
+  width: 100%;
+}
+.topSearch{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.showCity{
+  width: 30%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.showCity .getCity{
+ color: #333;
+ margin-left: 7px;
+ font-size: 13px;
+}
+.showCity image{
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+}
+.toggleMain{
+  width: 60%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  border-right: 0.35px solid rgba(000, 000, 000, 0.7);
+}
+.toggleMain text{
+  width:55px;
+  height: 37px;
+  line-height: 37px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+.toggleMain text{
+  margin-left: 25px;
+}
+.toggleMain .activeText{
+  color: #f00;
+  border-bottom: 2px solid #f00;
+}
+.search-btn{
+  width: 10%;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search-btn image{
+ width:20px;
+ height: 20px;
+}
+
+.grideBox{
+  width: 100%;
+  padding: 6px 0px;
+}

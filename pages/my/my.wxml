@@ -1,0 +1,46 @@
+<import src="/components/common/common.wxml" />
+<view class="container">
+  <view class="page-body">
+
+    <!-- header -->
+    <view class="page-section page-section-spacing header">
+      <image class="userheadimg" src="{{getuserimg}}" />
+      <view class="username">
+        <text class="getusername">{{getusername}}</text>
+        <text class="userlevel">{{userlevel}}</text>
+      </view>
+      <image class="setIcon" src="{{setImg}}" />
+    </view>
+    <!-- order money -->
+    <view class="page-section page-section-spacing order">
+      <!-- 钱包 -->
+      <view class="topinfo">
+        <block wx:for="{{myMoney}}" wx:for-item="item">
+          <navigator class="Tomoney-url" hover-class="none" url="{{item.urlPath}}">
+            <text class="numtext">{{item.moneyValue}}</text>
+            <text class="worldtext">{{item.moneyKey}}</text>
+          </navigator>
+        </block>
+      </view>
+      <!-- 订单 -->
+      <view class="myorder">
+        <text class="order-title">我的订单</text>
+        <template is="gridelist" data="{{...myorderData}}"></template>
+      </view>
+    </view>
+
+    <!-- 卡券中心 -->
+    <view class="card-center">
+      <text class="card-title">{{cardTitle}}</text>
+     
+        <view class="card-linebox">
+        <block wx:for="{{cardCenter}}" wx:for-item="carditem">
+           <view class="card-list">
+          <text class="card-type">{{carditem.cardName}}</text>
+          </view>
+        </block>
+        </view>
+      </view>
+    
+  </view>
+</view>

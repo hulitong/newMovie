@@ -1,0 +1,44 @@
+<!-- swiper template -->
+<template name="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-active-color="{{indicatorActiveColor}}" circular="{{circular}}">
+    <block wx:for="{{swiperImg}}" wx:for-item="item" wx:key="*this">
+      <swiper-item>
+        <image src="{{item.imgPath}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</template>
+
+<!-- gride template -->
+<template name="gridelist">
+  <view class="gride">
+    <block wx:for="{{gride}}" wx:for-item="item" wx:key="*this">
+      <navigator hover-class="none" class="gride-url" url="{{item.toUrl}}">
+        <image src="{{item.menuBtnPath}}"></image>
+        <text>{{item.grideText}}</text>
+      </navigator>
+    </block>
+  </view>
+</template>
+
+<!-- movies list template -->
+<template name="movieLists">
+  <view class="movielist">
+    <block wx:for="{{moviesLists}}" wx:for-item="item" wx:key="*this">
+      <navigator hover-class="none" class="movie-url" url="{{item.tourl}}">
+        <view class="movie-img">
+          <image src="{{item.movieImg}}" />
+        </view>
+        <view class="movie-world">
+          <text class="movieName">{{item.movieName}}</text>
+          <text class="pingfeng">{{item.pingfeng}}</text>
+          <text class="zhuyan">主演：{{item.toStar}}</text>
+          <text>{{item.playCount}}</text>
+        </view>
+        <view class="buy-btn">
+            <button>购票</button>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</template>
