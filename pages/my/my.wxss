@@ -185,3 +185,42 @@
   padding: 2px 3px;
   border-radius: 5px;
 }
+
+/* list */
+.listbox{
+  width:calc(100% - 14px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding: 0 7px;
+}
+.listurl{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(204, 196, 196, 0.7);
+  padding:10px 0;
+}
+
+.list-lt{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.listurl .list-lt image{
+  width: 25px;
+  height: 25px;
+}
+.listurl text{
+ font-size: 13px;
+ color: #333;
+ margin-left: 15px;
+}
+.naviurl{
+  width: 25px;
+  height: 25px;
+}

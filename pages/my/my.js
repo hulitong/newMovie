@@ -28,7 +28,16 @@ Page({
       { id: 2, cardName: '会员卡' },
       { id: 3, cardName: '积分卡' },
       { id: 4, cardName: '联盟卡' }
-    ]
+    ],
+    listData:{
+      list:[
+        { id: 1, listUrl:'myAddress/myAddress',listImg: '/images/address.png', listTitle:'我的地址'},
+        { id: 2, listUrl:'', listImg: '/images/coupon.png', listTitle: '我的卡券' },
+        { id: 3, listUrl:'',listImg: '/images/collection.png', listTitle: '我的收藏' },
+        { id: 4, listUrl:'',listImg: '/images/message.png', listTitle: '我的信息' },
+        { id: 5, listUrl: '', listImg: '/images/customer01.png', listTitle: '联系客服' },
+      ]
+    }
   },
 
   /**

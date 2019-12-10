@@ -1,0 +1,20 @@
+<view class="address-box">
+  <block wx:for="{{addressCard}}" wx:for-item="item" wx:key="*this">
+    <view class="address-lists">
+      <view class="address-baseinfo">
+        <text class="username">{{item.userName}}</text>
+        <text class="usertel">{{item.userTel}}</text>
+        <text class="useraddress">{{item.userAddress}}</text>
+      </view>
+      <view class="address-status">
+        <button type="primary" size="mini" class="address-edit">edit</button>
+      </view>
+    </view>
+  </block>
+</view>
+
+<view class="add-address">
+  <navigator class="url-add" url="../addAddress/addAddress">
+    <text>添加</text>
+  </navigator>
+</view>

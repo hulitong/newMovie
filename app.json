@@ -1,10 +1,12 @@
 {
   "pages": [
+    "pages/my/addAddress/addAddress",
     "pages/my/my",
+    "pages/my/myAddress/myAddress",
     "pages/home/home",
     "pages/movie/movie",
-   
     "components/common/common"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",

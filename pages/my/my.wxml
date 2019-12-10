@@ -42,5 +42,9 @@
         </view>
       </view>
     
+    <!-- 列表内容 -->
+    <view class="listbox">
+      <template is="list" data="{{...listData}}" />
+    </view>
   </view>
 </view>

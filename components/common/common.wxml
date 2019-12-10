@@ -36,9 +36,22 @@
           <text>{{item.playCount}}</text>
         </view>
         <view class="buy-btn">
-            <button>购票</button>
+          <button>购票</button>
         </view>
       </navigator>
     </block>
   </view>
+</template>
+
+<!-- list -->
+<template name="list">
+    <block wx:for="{{list}}" wx:for-item="itemList">
+      <navigator hover-class="none" class="listurl" url="{{itemList.listUrl}}">
+        <view class="list-lt">
+          <image src="{{itemList.listImg}}" />
+          <text>{{itemList.listTitle}}</text>
+        </view>
+        <image src="/images/right.png" class="naviurl"/>
+      </navigator>
+    </block>
 </template>
